@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+     -->
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="text">
+            <form>
+                <div id="op">
+                    <input type="text" id="res" >
+                </div>
+                <div class="btn">
+                    <input type="button" value="C" onclick="res.value=''" id="clearspace">
+                    <input type="button" value="." onclick="solve('.')" id="exp">
+                    <input type="button" value="%" onclick="solve('%')" id="perc">
+                    <input type="button" value="/" onclick="solve('/')" id="div">
+                    <br>
+                    <input type="button" value="7" onclick="solve('7')">
+                    <input type="button" value="8" onclick="solve('8')">
+                    <input type="button" value="9" onclick="solve('9')">
+                    <input type="button" value="x" onclick="solve('x')" id="mul">
+                    <br>
+                    <input type="button" value="4" onclick="solve('4')">
+                    <input type="button" value="5" onclick="solve('5')">
+                    <input type="button" value="6" onclick="solve('6')">
+                    <input type="button" value="-" onclick="solve('-')" id="sub">
+                    <br>
+                    <input type="button" value="1" onclick="solve('1')">
+                    <input type="button" value="2" onclick="solve('2')">
+                    <input type="button" value="3" onclick="solve('3')">
+                    <input type="button" value="+" onclick="solve('+')" id="add">
+                    <br>
+                    <input type="button" value="00" onclick="solve('00')" id="zero">
+                    <input type="button" value="0" onclick="solve('0')" id="dec">
+                    <input type="button" value="del" onclick="back()" id="backspace">
+                    <input type="button" value="=" onclick="result()" id="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
